@@ -8,7 +8,7 @@ import PageObjects.HomePageObject;
 import Reports.Report;
 import Utils.SeleniumUtils;
 
-public class RealizarConsultaVagasActions extends SeleniumUtils {
+public class RealizarBuscaActions extends SeleniumUtils {
 
 	ChromeDriver driver;
 	Report report;
@@ -18,7 +18,7 @@ public class RealizarConsultaVagasActions extends SeleniumUtils {
 	/**
 	 * - Construtor da Class.
 	 */
-	public RealizarConsultaVagasActions(ChromeDriver driver, Report report) {
+	public RealizarBuscaActions(ChromeDriver driver, Report report) {
 		this.driver = driver;
 		this.report = report;
 	}

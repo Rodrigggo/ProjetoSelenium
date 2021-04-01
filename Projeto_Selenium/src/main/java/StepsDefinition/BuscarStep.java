@@ -2,17 +2,17 @@ package StepsDefinition;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import Actions.RealizarConsultaVagasActions;
+import Actions.RealizarBuscaActions;
 import Reports.Report;
 import Utils.WebDriverManager;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.*;
 
-public class ConsultarVagasStep {
+public class BuscarStep {
 
 	Report report;
-	RealizarConsultaVagasActions realizarConsultaVagasActions;
+	RealizarBuscaActions realizarConsultaVagasActions;
 	ChromeDriver driver;
 
 	@Before("@StartScenarios")
@@ -21,7 +21,7 @@ public class ConsultarVagasStep {
 		WebDriverManager webDriverManager = new WebDriverManager();
 		driver = webDriverManager.getDriver();
 		report = new Report();
-		realizarConsultaVagasActions = new RealizarConsultaVagasActions(driver, report);
+		realizarConsultaVagasActions = new RealizarBuscaActions(driver, report);
 	}
 
 	@After("@FinishScenarios")

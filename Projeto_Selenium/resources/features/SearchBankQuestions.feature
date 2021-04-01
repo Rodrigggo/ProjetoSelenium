@@ -1,6 +1,5 @@
 Feature: Search the Bank of Questions 
 
-@ignore 
 @StartScenarios 
 @FinishScenarios 
 Scenario: Search question nonexistent 
@@ -9,7 +8,6 @@ Scenario: Search question nonexistent
 	When  I click on the search button 
 	Then  I see an error message with the text "No questions found." 
 	
-@ignore 
 @StartScenarios 
 @FinishScenarios 
 Scenario: Search question existent 

@@ -1,5 +1,5 @@
 ### Projeto de Automação de Testes
-##### Automação de testes Web+API Rest com o selenium webdriver, cucumber, java e restAssured.
+##### Automação de testes Web com o selenium webdriver, cucumber e java.
 
 
 ###### Para executar os testes é necessários realizar as seguintes instalações :

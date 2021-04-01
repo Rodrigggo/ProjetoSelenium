@@ -14,6 +14,7 @@ public class BuscarStep {
 	Report report;
 	RealizarBuscaActions realizarConsultaVagasActions;
 	ChromeDriver driver;
+	String URL = "https://opentdb.com/";
 
 	@Before("@StartScenarios")
 	public void before() {
@@ -33,7 +34,7 @@ public class BuscarStep {
 
 	@Given("^I navigate to the question bank search page$")
 	public void acessar_o_site() throws InterruptedException {
-		realizarConsultaVagasActions.acessaUrl("https://opentdb.com/");
+		realizarConsultaVagasActions.acessaUrl(URL);
 		realizarConsultaVagasActions.acessaTelaBusca();
 	}
 
